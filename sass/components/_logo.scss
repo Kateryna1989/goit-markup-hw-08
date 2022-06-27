@@ -1,0 +1,22 @@
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--primary-text-color);
+
+  &:hover,
+  &:focus {
+    text-decoration-color: var(--accent-color);
+  }
+}
+
+.logo-accent {
+  color: #2196f3;
+}
+
+.logo--white {
+  color: var(--accent-white-color);
+}

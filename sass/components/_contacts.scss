@@ -1,0 +1,35 @@
+.envelope-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.telephone-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contact {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  &__item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
+  .link {
+    color: currentColor;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.contact__item:not(:last-child) {
+  margin-right: 50px;
+}

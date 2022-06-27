@@ -1,0 +1,201 @@
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  transition: opacity 300ms, visibility 300ms;
+}
+
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 300ms;
+  padding: 40px;
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+.close-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background: transparent;
+    cursor: pointer;
+    color: var(--accent-color);
+  }
+}
+
+.icon-close {
+  fill: currentColor;
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.form-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+.form-field {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+
+  & .form-label {
+    margin-bottom: 4px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+  }
+  & .form-input {
+    width: 100%;
+    padding: 12px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+}
+.comment {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+
+  &::placeholder {
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: currentColor;
+}
+.input-wrap {
+  position: relative;
+}
+
+.form-agreement-link {
+  color: var(--accent-color);
+}
+/* -----------------------------Form-button----------------------- */
+.form-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  background: var(--accent-background-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--accent-white-color);
+  padding: 10px 55px;
+  border: none;
+  letter-spacing: 0.06em;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    background: #188ce8;
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+    transition-duration: 250ms;
+  }
+}
+
+/* ------------------Check-box--------------------- */
+.check-text {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  display: flex;
+  margin-bottom: 30px;
+
+  &.check-text::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 3px;
+    margin-right: 5px;
+  }
+}
+
+.form-check:checked + .check-text::before {
+  background-color: var(--accent-background-color);
+  background-image: url(../images/icon\ check.svg);
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-check:focus + .check-text::before {
+  border-color: var(--accent-color);
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* -------------Form-input focus--------------- */
+.form-input:focus {
+  border-color: var(--accent-color);
+
+  & + .form-icon {
+    fill: var(--accent-color);
+  }
+}
