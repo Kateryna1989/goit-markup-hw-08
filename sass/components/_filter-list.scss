@@ -4,8 +4,9 @@
 }
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  gap: 8px 4px;
 }
 
 .filter-list_item:hover,
@@ -15,5 +16,16 @@
 
   &:not(:last-child) {
     margin-right: 8px;
+  }
+}
+@include tablet-screen {
+  .filter-list {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@include large-screen {
+  .filter-list {
+    margin-bottom: 50px;
   }
 }

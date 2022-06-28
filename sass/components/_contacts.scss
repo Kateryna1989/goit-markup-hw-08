@@ -7,29 +7,44 @@
   fill: currentColor;
 }
 .contact {
-  margin-left: auto;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  display: none;
+}
 
-  &__item {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
-  }
-  .link {
-    color: currentColor;
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
+@include tablet-screen {
+  .contact {
+    margin-left: auto;
+    display: flex;
+    // justify-content: flex-end;
+    // align-items: flex-end;
+    flex-direction: column;
+
+    &__item {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var(--secondary-text-color);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: color;
+    }
+    .link {
+      color: currentColor;
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+      }
     }
   }
 }
 
-.contact__item:not(:last-child) {
-  margin-right: 50px;
+@include large-screen {
+  .contact {
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+
+  .contact__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
