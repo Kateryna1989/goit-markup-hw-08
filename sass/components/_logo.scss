@@ -1,15 +1,8 @@
 .logo {
-  // font-family: "Raleway";
-  // font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.19;
-
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 1.16;
-
+  font-size: 26px;
+  line-height: 1.19;
   text-decoration: none;
   display: inline-block;
   color: var(--primary-text-color);
@@ -26,18 +19,4 @@
 
 .logo--white {
   color: var(--accent-white-color);
-}
-
-@include large-screen {
-
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  display: inline-block;
-  color: var(--primary-text-color);
-
-  // &:hover,
-  // &:focus {
-  //   text-decoration-color: var(--accent-color);
-  }
 }
