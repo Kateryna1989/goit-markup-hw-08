@@ -27,9 +27,28 @@
   margin-right: 93px;
 }
 .nav__list {
-  display: flex;
-  align-items: center;
+  display: none;
 }
-.nav__link:not(:last-child) {
-  margin-right: 50px;
+// .nav__link:not(:last-child) {
+//   margin-right: 50px;
+// }
+
+@include tablet-screen {
+  .nav__list {
+    display: flex;
+    align-items: center;
+  }
+  .nav__link:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@include large-screen {
+  .nav__list {
+    display: flex;
+    align-items: center;
+  }
+  .nav__link:not(:last-child) {
+    margin-right: 50px;
+  }
 }

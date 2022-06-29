@@ -112,14 +112,29 @@ body {
 }
 
 .nav__list {
-  display: flex;
-  align-items: center;
+  display: none;
 }
 
-.nav__link:not(:last-child) {
-  margin-right: 50px;
-}
+@media only screen and (min-device-width: 768px) {
+  .nav__list {
+    display: flex;
+    align-items: center;
+  }
 
+  .nav__link:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+@media screen and (min-device-width: 1200px) {
+  .nav__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__link:not(:last-child) {
+    margin-right: 50px;
+  }
+}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
