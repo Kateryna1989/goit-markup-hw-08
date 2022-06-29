@@ -5,7 +5,7 @@ body {
   background-color: #fff;
 }
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 .container {
   // width: 1200px;
@@ -45,6 +45,9 @@ body {
 }
 
 @include large-screen {
+  .section {
+    padding: 94px 0;
+  }
   .container {
     width: 1200px;
   }
