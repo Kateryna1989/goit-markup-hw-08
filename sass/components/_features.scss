@@ -1,17 +1,30 @@
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // padding-top: 94px;
 }
 .features-list {
   padding-bottom: 0;
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  // margin: 0 15px;
 }
 .features-list__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin: 15px;
+  margin-bottom: 30px;
 }
+
+// .features-list {
+//   padding-bottom: 0;
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: -15px;
+// }
+// .features-list__item {
+//   flex-basis: calc(100% / 4 - 30px);
+//   margin: 15px;
+// }
 .features-list__title {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -56,10 +69,51 @@
   background-image: url(../images/astronaut.svg);
 }
 
-.features-list,
-.cards-list,
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+// .features-list,
+// .cards-list,
+// .team-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: -15px;
+// }
+@include tablet-screen {
+  .features-list {
+    padding-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .features-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+  .features-list__title {
+    text-align: unset;
+  }
+}
+
+@include large-screen {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
+
+  .features-list {
+    padding-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .features-list__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin: 15px;
+  }
+
+  .features-list,
+  .cards-list,
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }

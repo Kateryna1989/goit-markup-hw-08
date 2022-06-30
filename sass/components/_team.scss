@@ -1,5 +1,5 @@
 .team-list__item {
-  flex-basis: calc(100% / 4 - 30px);
+  // flex-basis: calc(100% / 4 - 30px);
   margin: 15px;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -11,7 +11,7 @@
 .member__name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   margin-bottom: 10px;
 }
 .member__position {
@@ -21,4 +21,30 @@
 }
 .member__info {
   padding: 30px;
+}
+
+@include tablet-screen {
+  .team-list {
+    padding-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .team-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+}
+
+@include large-screen {
+  .team-list {
+    padding-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .team-list__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin: 15px;
+  }
 }
