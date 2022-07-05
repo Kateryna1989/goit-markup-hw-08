@@ -47,16 +47,26 @@
 }
 @include tablet-screen {
   .footer-form {
-    flex-direction: row;
+    // flex-direction: row;
+  }
+  .footer-social-form {
+    width: 100%;
   }
   .ft-form-field {
-    margin-bottom: 0;
+    margin-bottom: 30px;
     width: 450px;
     margin-right: 12px;
   }
 }
 @include large-screen {
+  .footer-social-form {
+    width: unset;
+  }
+  .footer-form {
+    flex-direction: row;
+  }
   .ft-form-field {
+    margin-bottom: 0;
     width: 358px;
   }
 }

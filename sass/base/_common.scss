@@ -16,9 +16,12 @@ body {
 
 .section__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 1.18;
+  margin-bottom: 30px;
+  // font-size: 36px;
+  // line-height: 1.17;
+  // margin-bottom: 50px;
   text-align: center;
 }
 /* to delete all markers */
@@ -50,5 +53,12 @@ body {
   }
   .container {
     width: 1200px;
+  }
+  .section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+    text-align: center;
   }
 }

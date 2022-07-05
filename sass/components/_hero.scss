@@ -15,7 +15,7 @@
   margin: 0 auto;
 }
 .hero__title {
-  width: 380px;
+  max-width: 380px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
@@ -23,8 +23,8 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  // margin-left: auto;
-  // margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 }
 .hero__button {
@@ -69,6 +69,7 @@
   }
   .hero__title {
     width: 696px;
+    max-width: unset;
     font-size: 44px;
     line-height: 1.36;
     // font-weight: 900;
