@@ -148,6 +148,11 @@
   color: #212121;
 }
 
+.mob-menu-item {
+  .current {
+    color: $accent-color;
+  }
+}
 .mob-menu-item,
 .mob-contact,
 .mob-contact__item {

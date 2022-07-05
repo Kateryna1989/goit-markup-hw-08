@@ -212,6 +212,10 @@ body {
   color: #212121;
 }
 
+.mob-menu-item .current {
+  color: #2196f3;
+}
+
 .mob-menu-item,
 .mob-contact,
 .mob-contact__item {
