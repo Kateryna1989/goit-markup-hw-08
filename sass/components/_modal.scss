@@ -8,8 +8,10 @@
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
+  // width: 528px;
+  // min-height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
   position: absolute;
@@ -101,7 +103,7 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 
   &::placeholder {
     line-height: 1.16;
@@ -153,7 +155,8 @@
 /* ------------------Check-box--------------------- */
 .check-text {
   color: var(--secondary-text-color);
-  font-size: 14px;
+  font-size: 12px;
+  // font-size: 14px;
   display: flex;
   margin-bottom: 30px;
 
@@ -197,5 +200,18 @@
 
   & + .form-icon {
     fill: var(--accent-color);
+  }
+}
+
+@include large-screen {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
+  .comment {
+    margin-bottom: 20px;
+  }
+  .check-text {
+    font-size: 14px;
   }
 }
