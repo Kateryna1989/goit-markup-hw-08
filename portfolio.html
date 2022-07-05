@@ -62,7 +62,7 @@
           </li>
         </ul>
         <!-- Contacts-mob-btn-->
-        <!-- <div class="container"> -->
+        <div class="container">
         <button class="mobile-btn menu-open-btn" type="menu">
           <svg class="icon" width="40" height="40">
             <use href="./images/icons.svg#icon-menu"></use>
@@ -77,21 +77,21 @@
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
-            <div class="mob-menu-top">
-              <ul class="mob-menu-list list">
-                <li class="mob-menu-item">
-                  <a href="./index.html" class="mob-menu-link">Студия</a>
-                </li>
-                <li class="mob-menu-item">
-                  <a href="./portfolio.html" class="mob-menu-link current"
-                    >Портфолио</a
-                  >
-                </li>
-                <li class="mob-menu-item">
-                  <a href="#" class="mob-menu-link">Контакты</a>
-                </li>
-              </ul>
-            </div>
+            <!-- <div class="mob-menu-top"> -->
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a href="./index.html" class="mob-menu-link">Студия</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="./portfolio.html" class="mob-menu-link current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a href="#" class="mob-menu-link">Контакты</a>
+              </li>
+            </ul>
+            <!-- </div> -->
             <!-- Contacts-mob -->
             <div class="mob-menu-bottom">
               <ul class="mob-contact list">
@@ -162,11 +162,39 @@
             <li class="project">
               <a href="#" class="project__link">
                 <div class="project__top-wrap">
-                  <img
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/technokryak.jpg            1x,
+                        ./images/desktop-technokryak-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-technokryak-1x.jpg 1x,
+                        ./images/tab-technokryak-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob-technokryak-1x.jpg 1x,
+                        ./images/mob-technokryak-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/technokryak.jpg"
+                      alt="Технокряк"
+                      class="project-photo"
+                    />
+                  </picture>
+                  <!-- <img
                     src="./images/technokryak.jpg"
                     alt="Технокряк"
                     class="project-photo"
-                  />
+                  /> -->
                   <p class="project__top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
