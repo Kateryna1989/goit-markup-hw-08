@@ -25,15 +25,11 @@
   &:hover,
   &:focus {
     cursor: pointer;
-    color: var(--accent-color);
+    color: $accent-color;
     background-color: transparent;
-    border-color: var(--accent-color);
+    border-color: $accent-color;
   }
 }
-
-// .client-list__item:not(:last-child) {
-//   margin-right: 30px;
-// }
 
 .client__icon {
   fill: currentColor;

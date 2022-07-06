@@ -13,16 +13,6 @@
   margin-bottom: 30px;
 }
 
-// .features-list {
-//   padding-bottom: 0;
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin: -15px;
-// }
-// .features-list__item {
-//   flex-basis: calc(100% / 4 - 30px);
-//   margin: 15px;
-// }
 .features-list__title {
   text-align: center;
   font-weight: 700;
@@ -34,7 +24,7 @@
 .features-list__text {
   font-size: 14px;
   line-height: 1.71;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 
 .feature-icon::before {
@@ -69,13 +59,6 @@
   background-image: url(../images/astronaut.svg);
 }
 
-// .features-list,
-// .cards-list,
-// .team-list {
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin: -15px;
-// }
 @include tablet-screen {
   .features-list {
     padding-bottom: 0;
