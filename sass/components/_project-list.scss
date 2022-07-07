@@ -74,12 +74,23 @@
 }
 @include tablet-screen {
   .project {
-    &-photo {
-      width: 354px;
+    display: flex;
+    max-width: 354px;
+    &__link {
+      display: flex;
+      flex-direction: column;
+    }
+    &__info {
+      flex-grow: 1;
     }
     &-list {
-      gap: 15px;
+      gap: 30px;
       justify-content: unset;
     }
+  }
+}
+@include large-screen {
+  .project {
+    max-width: unset;
   }
 }

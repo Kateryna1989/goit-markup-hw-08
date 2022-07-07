@@ -72,7 +72,10 @@
       flex-direction: row;
       align-items: flex-start;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
+    }
+    .footer-social-form {
+      margin-top: 60px;
     }
     .footer-social-wrapper {
       &:last-of-type {
