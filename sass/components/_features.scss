@@ -9,7 +9,7 @@
   flex-wrap: wrap;
   // margin: 0 15px;
 }
-.features-list__item {
+.features-list__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -65,8 +65,14 @@
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+    .features-list__item {
+      margin-bottom: 0;
+      flex-basis: calc(100% / 2 - 30px);
+      margin: 15px;
+    }
   }
   .features-list__item {
+    margin-bottom: 0;
     flex-basis: calc(100% / 2 - 30px);
     margin: 15px;
   }
@@ -86,10 +92,10 @@
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-  }
-  .features-list__item {
-    flex-basis: calc(100% / 4 - 30px);
-    margin: 15px;
+    .features-list__item {
+      flex-basis: calc(100% / 4 - 30px);
+      margin: 15px;
+    }
   }
 
   .features-list,
